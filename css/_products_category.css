@@ -1,0 +1,8 @@
+.product-img img{
+    transition: 0.2s ease-in-out ;
+}
+.product-img img:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #afafaf;
+    background-color: rgba(255, 199, 21, 0.05);
+}

@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.2 -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!--    google font-->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <!-- owlcarousel -->
+  <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css">
+  <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.css">
+  <!--    css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--blur-back-->
+<div class="backdrop bg-blur"></div>
+<!--navBar-->
+<div class="container-fluid bg-white">
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <!--        logo-->
+      <div class="col-6 col-sm-6 col-lg-3 order-1">
+        <div class="d-flex align-items-center justify-content-start">
+          <figure class="logo-container align-content-center ms-3 position-relative">
+            <img class="img-fluid img-fluid-custom position-absolute" src="assets/image/img-061.svg"
+                 alt="">
+          </figure>
+          <div class="custom-border-left-primary"></div>
+          <h1 class="fs-5 fw-bold my-5 custom-border-right-primary-color pe-3 d-block"
+              style="font-size: 13px !important;">
+            لنت اوتکس</h1>
+        </div>
+      </div>
+      <!--        search bar-->
+      <div class="col-12 col-sm-12 col-lg-6  order-3 order-lg-2 margin-right">
+        <div class="input-group rounded-end rounded-5 position-relative">
+          <button class="btn btn-outline-secondary dropdown-toggle d-none" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">دسته بندی لنت
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item text-center" href="#">لیست همه لنت ها</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-center" href="#">لنت پراید</a></li>
+            <li><a class="dropdown-item text-center" href="#">لنت پژو</a></li>
+            <li><a class="dropdown-item text-center" href="#">لنت سمند</a></li>
+            <li><a class="dropdown-item text-center" href="#">لنت پرشیا</a></li>
+            <li><a class="dropdown-item text-center" href="#">لنت 405</a></li>
+          </ul>
+          <i class="fa-solid fa-magnifying-glass fs-5 m-1 search-icon-style rounded-3 position-absolute z-index-6 d-none d-lg-flex"></i>
+          <input placeholder="جستجو کنید ..." type="text"
+                 class="form-control custom-form-control" aria-label="Text input with dropdown button">
+          <!--                <i class="fa-solid fa-filter fs-5 m-1 test rounded-3"></i>-->
+        </div>
+      </div>
+      <!--        accounts-->
+      <div class="col-6 col-sm-6 col-sm-3 col-lg-3 d-flex justify-content-end order-2 order-lg-3 ">
+        <!--basket-btn-->
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group mx-4" role="group">
+            <button type="button" class="btn custom-btn-secondary dropdown-toggle" id="basket-btn">
+              <!--                            data-bs-toggle="dropdown"-->
+              <!--                            aria-expanded="true"-->
+
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger sum-of-basket-1">
+                                <!--<span class="visually-hidden">unread messages</span>-->
+                            </span>
+              <span class="d-none d-sm-inline">سبد من</span>
+            </button>
+            <div class="dropdown-menu pb-0" id="basket-menu">
+              <!--تعداد و مشاهده همه-->
+              <div class="d-flex justify-content-between px-3 py-1">
+                <p class="m-0 fs-12px"><span class="sum-of-basket-2 me-1"></span>کالا</p>
+                <a href="#" class="fs-12px fw-bold">مشاهده سبد خرید</a>
+              </div>
+              <!--کالا ها-->
+              <div class="py-2" style="width: 350px;height: 300px;overflow: auto">
+                <div class="container user-basket-container">
+                  <!--items-->
+                </div>
+              </div>
+              <!--footer-->
+              <footer class="bg-white border-top">
+                <div class="d-flex justify-content-around align-items-center">
+                  <div>
+                    <p class="text-end fs-12px m-0 pt-2">مبلغ قابل پرداخت</p>
+                    <p class="text-end fs-12px fw-bold"><span class="basket-total-price">1</span>تومان</p>
+                  </div>
+                  <button type="button" class="btn custom-btn-primary fs-12px fw-bold">ثبت سفارش
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!--login-btn-->
+        <a href="loginPage.html">
+          <button type="button" class="btn btn-user-sizing custom-btn-secondary position-relative"
+                  data-bs-toggle="modal">
+            <!-- <i class="fa-solid fa-user-plus"></i> -->
+            <i class="fa-solid fa-user"></i>
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!--        menu bar-->
+    <div class="col-12 position-relative">
+      <nav class="navbar navbar-expand-lg  position-relative">
+        <div class="container-fluid m-auto">
+          <button class="navbar-toggler position-absolute btn-hamburger-menu" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation" style="top: -45px; z-index: 5;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown custom-border-left-secondary-color position-unset">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <!--                                    <i class="fa-solid fa-bars mx-2"></i>-->
+                  <i class="fa-solid fa-align-right mx-2"></i>
+                  دسته بندی محصولات
+                </a>
+                <ul class="dropdown-menu w-100">
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت پراید</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت پژو</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت سمند</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت پرشیا</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت 405</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت 407</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-start align-items-center"
+                       href="#">
+                      <figure class="basket-img-res mx-2">
+                        <img src="assets/image/img-001.jpg" alt="..." class="img-fluid">
+                      </figure>
+                      <div class="d-flex">
+                        <p class="m-0 mx-1">لنت سمند</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-fire mx-2"></i> پر فروش ترین ها</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-ticket-simple mx-2"></i> تخفیف ها و
+                  پیشنهاد ها </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-tag mx-2"></i> شگفت انگیز ها</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  سوالی دارید ؟
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item d-flex justify-content-start align-items-center"
+                         href="#">سوالات متداول مشتریان</a></li>
+                  <li><a class="dropdown-item d-flex justify-content-start align-items-center"
+                         href="#">اخذ نمایندگی رسمی</a></li>
+                  <li><a class="dropdown-item d-flex justify-content-start align-items-center"
+                         href="#">راه های ارتباط با ما</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--breadcrumb-->
+<div class="container-fluid bg-white py-3 p-3 border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="#">خانه</a></li>
+            <li class="breadcrumb-item"><a href="#">لنت</a></li>
+            <li class="breadcrumb-item"><a href="#">سایپا</a></li>
+            <li class="breadcrumb-item active" aria-current="page">لنت پراید</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--product-->
+<div class="container-fluid bg-white py-5" style="background-image: linear-gradient(to top, #fffc0038, #ffffff);">
+  <div class="row">
+    <div class="container">
+      <div class="row" id="product-page">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--banner-->
+<div class="container-fluid pt-5 bg-white">
+  <div class="container border-top pt-5">
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 pb-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-truck-fast" id="icon-benefits-1"></i>
+          <div class="d-flex flex-column justify-content-center text-center" id="font-benefits-1">
+            <p class="m-0 mx-1 fw-bold">ارسال پستی رایگان</p>
+            <p class="m-0 mx-1">سفارشات بالای یک میلیون</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 pb-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-retweet" id="icon-benefits-2"></i>
+          <!--                    <i class="fa-solid fa-handshake-simple"></i>-->
+          <div class="d-flex flex-column justify-content-center text-center" id="font-benefits-2">
+            <p class="m-0 mx-1 fw-bold">ضمانت بازگشت کالا</p>
+            <p class="m-0 mx-1">30 روز ضمانت بازگشت کالا</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 d-md-none d-lg-inline col-lg-3 col-xl-3 pb-1">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-credit-card" id="icon-benefits-3"></i>
+          <div class="d-flex flex-column justify-content-center text-center" id="font-benefits-3">
+            <p class="m-0 mx-1 fw-bold">پرداخت آسان</p>
+            <p class="m-0 mx-1">با کلیه کارت های شتاب</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 pb-1">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-bolt-lightning" id="icon-benefits-4"></i>
+          <div class="d-flex flex-column justify-content-center text-center" id="font-benefits-4">
+            <p class="m-0 mx-1 fw-bold">ارسال فوری کالا</p>
+            <p class="m-0 mx-1">تحویل فوری محصولات در شیراز</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card-slider-model-1-->
+<div class="container-fluid pt-4 bg-danger" dir="auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 card-slider-model-1">
+        <div class="owl-carousel owl-carousel-1 position-relative">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card-slider-model-2-->
+<div class="container-fluid pt-4 mt-5 bg-white" dir="auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12  card-slider-model-2">
+        <p class="border-bottom"><span class="custom-border-bottom-3 px-4"><i
+                class="fa-solid fa-fire mx-2 text-orange"></i>پرفروش ترین ها</span></p>
+        <div class="owl-carousel owl-carousel-2 position-relative">
+          <!--items-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--info property comments-->
+<div class="container-fluid bg-white">
+  <div class="container">
+    <div class="col-sm-12">
+      <nav class="position-sticky bg-white" style="z-index: 999; top: 0;border-bottom: 1px solid #efefef;">
+        <div class="nav nav-tabs nav-tab-buttons" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">توضیحات</button>
+          <button class="nav-link" id="nav-signup-tab" data-bs-toggle="tab" data-bs-target="#nav-signup" type="button" role="tab" aria-controls="nav-signup" aria-selected="false">ویژگی ها</button>
+          <button class="nav-link" id="nav-forget-tab" data-bs-toggle="tab" data-bs-target="#nav-forget" type="button" role="tab" aria-controls="nav-forget" aria-selected="false">نظرات</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
+          <div class="mt-4 px-4 pb-4">
+            <p class="fs-16px fw-bold">طراحی جالب و دوست داشتنی</p>
+            <div class="border-end position-relative">
+              <i class="fa-regular fa-circle-dot position-relative custom-text-light" style="right: -8px;top: -7px;"></i>
+              <p class="lh-lg pe-5">
+                باید قبول کرد که سامسونگ در زمینه گوشی‌های هوشمند و به‌خصوص گوشی‌های اقتصادی، تنوع بالاتری به نسبت دیگر برند‌های فعال در این عرصه دارد. یکی از گوشی‌های اقتصادی دوست داشتنی و جذاب این شرکت، سامسونگ Galaxy A03 Core است. گوشی که بسیار مناسب برای آن دسته از کاربرانی است که می‌خواهند با هزینه کمتر گوشی هوشمندی را در اختیار داشته باشند تا توانایی ارائه عملکرد مناسبی در استفاده روزمره را داشته باشد. در همان نگاه اول طراحی جذاب و دوست داشتنی این گوشی توجه شما را به خودش جلب می‌کند. شاید طراحی در نظر گرفته شده برای Galaxy A03 Core خود را به‌عنوان یک گوشی اقتصادی معرفی کرده باشد، اما باید قبول کرد که طراحی جذاب و دوست داشتنی دارد. در نمای رو‌به‌رویی صفحه‌نمایش به طراحی ناچ واتردراپ مجهز شده است که بریدگی قطره‌ای شکل ناچ در قسمت بالایی و مرکزی صفحه‌نمایش، سنسور دوربین سلفی را در خود جای داده است. باید قبول کرد که سامسونگ در زمینه گوشی‌های هوشمند و به‌خصوص گوشی‌های اقتصادی، تنوع بالاتری به نسبت دیگر برند‌های فعال در این عرصه دارد. یکی از گوشی‌های اقتصادی دوست داشتنی و جذاب این شرکت، سامسونگ Galaxy A03 Core است. گوشی که بسیار مناسب برای آن دسته از کاربرانی است که می‌خواهند با هزینه کمتر گوشی هوشمندی را در اختیار داشته باشند تا توانایی ارائه عملکرد مناسبی در استفاده روزمره را داشته باشد. در همان نگاه اول طراحی جذاب و دوست داشتنی این گوشی توجه شما را به خودش جلب می‌کند. شاید طراحی در نظر گرفته شده برای Galaxy A03 Core خود را به‌عنوان یک گوشی اقتصادی معرفی کرده باشد، اما باید قبول کرد که طراحی جذاب و دوست داشتنی دارد. در نمای رو‌به‌رویی صفحه‌نمایش به طراحی ناچ واتردراپ مجهز شده است که بریدگی قطره‌ای شکل ناچ در قسمت بالایی و مرکزی صفحه‌نمایش، سنسور دوربین سلفی را در خود جای داده است.
+              </p>
+              <i class="fa-regular fa-circle-dot position-relative custom-text-light" style="right: -8px;"></i>
+              <figure class="mx-auto pe-5" style="max-width: 600px">
+                <img class="img-fluid" src="assets/image/img-006.jpg" alt="...">
+              </figure>
+              <i class="fa-regular fa-circle-dot position-relative custom-text-light" style="right: -8px;"></i>
+              <p class="lh-lg pe-5">
+                باید قبول کرد که سامسونگ در زمینه گوشی‌های هوشمند و به‌خصوص گوشی‌های اقتصادی، تنوع بالاتری به نسبت دیگر برند‌های فعال در این عرصه دارد. یکی از گوشی‌های اقتصادی دوست داشتنی و جذاب این شرکت، سامسونگ Galaxy A03 Core است. گوشی که بسیار مناسب برای آن دسته از کاربرانی است که می‌خواهند با هزینه کمتر گوشی هوشمندی را در اختیار داشته باشند تا توانایی ارائه عملکرد مناسبی در استفاده روزمره را داشته باشد. در همان نگاه اول طراحی جذاب و دوست داشتنی این گوشی توجه شما را به خودش جلب می‌کند. شاید طراحی در نظر گرفته شده برای Galaxy A03 Core خود را به‌عنوان یک گوشی اقتصادی معرفی کرده باشد، اما باید قبول کرد که طراحی جذاب و دوست داشتنی دارد. در نمای رو‌به‌رویی صفحه‌نمایش به طراحی ناچ واتردراپ مجهز شده است که بریدگی قطره‌ای شکل ناچ در قسمت بالایی و مرکزی صفحه‌نمایش، سنسور دوربین سلفی را در خود جای داده است. باید قبول کرد که سامسونگ در زمینه گوشی‌های هوشمند و به‌خصوص گوشی‌های اقتصادی، تنوع بالاتری به نسبت دیگر برند‌های فعال در این عرصه دارد. یکی از گوشی‌های اقتصادی دوست داشتنی و جذاب این شرکت، سامسونگ Galaxy A03 Core است. گوشی که بسیار مناسب برای آن دسته از کاربرانی است که می‌خواهند با هزینه کمتر گوشی هوشمندی را در اختیار داشته باشند تا توانایی ارائه عملکرد مناسبی در استفاده روزمره را داشته باشد. در همان نگاه اول طراحی جذاب و دوست داشتنی این گوشی توجه شما را به خودش جلب می‌کند. شاید طراحی در نظر گرفته شده برای Galaxy A03 Core خود را به‌عنوان یک گوشی اقتصادی معرفی کرده باشد، اما باید قبول کرد که طراحی جذاب و دوست داشتنی دارد. در نمای رو‌به‌رویی صفحه‌نمایش به طراحی ناچ واتردراپ مجهز شده است که بریدگی قطره‌ای شکل ناچ در قسمت بالایی و مرکزی صفحه‌نمایش، سنسور دوربین سلفی را در خود جای داده است.
+              </p>
+              <i class="fa-regular fa-circle-dot position-relative custom-text-light" style="right: -8px;"></i>
+              <figure class="mx-auto pe-5" style="max-width: 600px">
+                <img class="img-fluid" src="assets/image/img-007.jpg" alt="...">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab" tabindex="0">
+          <div class="py-5 d-flex justify-content-center">
+            <div class="ps-5">
+              <p class="p-1 m-0 fs-16px lh-lg"><span class="custom-text-light">مناسب برای  </span></p>
+              <p class="p-1 m-0 fs-16px lh-lg"><span class="custom-text-light">تعداد لنت  </span></p>
+              <p class="p-1 m-0 fs-16px lh-lg"><span class="custom-text-light">جنس  </span></p>
+              <p class="p-1 m-0 fs-16px lh-lg"><span class="custom-text-light">ابعاد  </span></p>
+              <p class="p-1 m-0 fs-16px lh-lg"><span class="custom-text-light">وزن  </span></p>
+            </div>
+            <div class="pe-5">
+              <p class="p-1 m-0 fs-16px lh-lg border-bottom"><span class="fw-bold">وانت پراید / پی کی</span></p>
+              <p class="p-1 m-0 fs-16px lh-lg border-bottom"><span class="fw-bold">دو جفت</span></p>
+              <p class="p-1 m-0 fs-16px lh-lg border-bottom"><span class="fw-bold">فلز</span></p>
+              <p class="p-1 m-0 fs-16px lh-lg border-bottom"><span class="fw-bold">25 * 25</span></p>
+              <p class="p-1 m-0 fs-16px lh-lg border-bottom"><span class="fw-bold">2 کیلو گرم</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-forget" role="tabpanel" aria-labelledby="nav-forget-tab" tabindex="0">
+          <div class="mt-4 px-4">
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="img-fluid" src="assets/image/users/05-comment.png" alt="...">
+              </div>
+<!--              <div class="col-sm-3">-->
+<!--                <p class="m-0 fs-14px">کیفیت ساخت</p>-->
+<!--                <div class="progress mb-3" style="height: 5px;">-->
+<!--                  <div class="progress-bar custom-bg-primary" role="progressbar" aria-label="Example 20px high" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                </div>-->
+<!--                <p class="m-0 fs-14px">ارزش خرید نسبت به قیمت</p>-->
+<!--                <div class="progress mb-3" style="height: 5px;">-->
+<!--                  <div class="progress-bar custom-bg-primary" role="progressbar" aria-label="Example 20px high" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                </div>-->
+<!--                <p class="m-0 fs-14px">دوام و ماندگاری</p>-->
+<!--                <div class="progress mb-3" style="height: 5px;">-->
+<!--                  <div class="progress-bar custom-bg-primary" role="progressbar" aria-label="Example 20px high" style="width: 98%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+              <div class="col-sm-12 mt-5">
+<!--                header-->
+                <div class="flex-grow-1 me-2 pb-4 border-bottom">
+                  <span class="badge bg-success mx-1">4.5</span>
+                  <span class="fw-bold m-0">
+                      <span>سروش ممتحن</span>
+                      <span class="badge custom-text-light custom-bg-light">خریدار</span>
+                    </span>
+                  <span class="fs-12px mx-1"><i class="fa-solid fa-circle custom-text-light fs-5px mx-1"></i>6 آبان 1401</span>
+                </div>
+<!--                comment-->
+                <div class="mt-2 px-5">
+                  <p class="fs-14px text-success"><i class="fa-regular fa-thumbs-up ms-1"></i>پیشنهاد می کنم</p>
+                  <p>فعلا که خوب بوده پناهش بر خدا</p>
+                </div>
+<!--                plus & minus-->
+                <div class="mt-2 px-5 border-bottom">
+                  <p class="fs-14px"><i class="fa-solid fa-plus fs-14px ms-1 position-relative text-success" style="top: 2px"></i>کیفیت عالی</p>
+                  <p class="fs-14px"><i class="fa-solid fa-plus fs-14px ms-1 position-relative text-success" style="top: 2px"></i>نصب راحت</p>
+                  <p class="fs-14px"><i class="fa-solid fa-minus position-relative ms-1 text-danger" style="top: 2px"></i>نبود خدمات پس از فروش</p>
+                </div>
+<!--                store-->
+                <div class="mt-2 px-5 d-flex justify-content-between">
+                  <p class="card-text fs-12px m-0 mb-1"><i class="fa-solid fa-shop" style="color: #5a5a5a"></i><span class="mx-1">فروشگاه پژو پارت</span></p>
+                  <p class="fs-12px">این دیدگاه مفید بود؟
+                    <span class="badge custom-bg-light custom-text-light mx-1">10<i class="fa-solid fa-plus mx-1 text-success"></i></span>
+                    <span class="badge custom-bg-light custom-text-light">2<i class="fa-solid fa-minus mx-1 text-danger"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<!--footer-->
+<footer class="container-fluid bg-dark" style="height: 350px">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+          <!--newsletter-->
+          <div class="card" style="width: 18rem;">
+            <!--<img src="assets/image/news-letter/04-news-letter.jpg" class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bolder">خبرنامه</h5>
+              <p class="card-text text-center">در خبرنامه ما مشترک شوید و کد تخفیف دریافت کنید</p>
+              <!--input-->
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control news-letter " dir="ltr"
+                       id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <!--button-->
+              <div class="d-grid gap-2">
+                <button class="btn custom-btn-primary" type="button">عضویت</button>
+              </div>
+            </div>
+          </div>
+          <!--tel-->
+          <div class="telephone mt-4">
+            <i class="fa-solid fa-phone-flip text-white px-2"></i>
+            <a href="tel:07132221032" class="nav-link text-white d-inline-block">0713-222-10-32</a>
+          </div>
+          <!--social-media-->
+          <div class="social-media mt-2">
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <!--location-->
+          <div class="location mt-2">
+            <i class="fa-solid fa-location-dot text-white px-2"></i>
+            <a href="https://www.google.com/maps/place/29%C2%B037'16.8%22N+52%C2%B032'39.5%22E/@29.6213412,52.5437568,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x70e1812181a7a6eb!7e2!8m2!3d29.6213403!4d52.5443037"
+               class="nav-link text-white d-inline-block custom-fs-6">فارس ، شیراز ، خیابان سعدی ، فروشگاه
+              پژو پارت</a>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-start d-none d-md-flex ">
+          <div class="footer-menu irankhodro">
+            <p class="text-center text-white custom-fs-6 custom-border-bottom-2 mt-4">لنت خودرو های
+              ایرانخودرو</p>
+
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-start d-none d-md-flex">
+          <div class="footer-menu saipa">
+            <p class="text-center text-white custom-fs-6 custom-border-bottom-2 mt-4">لنت خودرو های
+              سایپا</p>
+          </div>
+          <div class="footer-menu other">
+            <p class="text-center text-white custom-fs-6 custom-border-bottom-2 mt-4">لنت سایر خودرو ها</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--ژیار-->
+<footer class="container-fluid custom-bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 d-flex justify-content-center align-items-center flex-column" style="height: 30px">
+        <p class="g-0 m-0 p-0 fw-bolder custom-fs-6">طراحی و توسعه وبسایت توسط ( ژیار ) سروش ممتحن</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+</script>
+<!--owlcarousel-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owlcarousel/owl.carousel.js"></script>
+<!--js-->
+<script src="js/zoomy.js"></script>
+<script src="Product.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

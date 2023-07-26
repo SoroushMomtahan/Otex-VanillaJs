@@ -1,0 +1,12 @@
+/*benefits = مزایا*/
+#icon-benefits-1,#icon-benefits-2,#icon-benefits-3,#icon-benefits-4{
+    color: #ffc715;
+    font-size: 34px;
+    transition: 0.3s ease;
+}
+#font-benefits-1,#font-benefits-2,#font-benefits-3,#font-benefits-4{
+    font-size: 15px;
+}
+#icon-benefits-1:hover,#icon-benefits-2:hover,#icon-benefits-3:hover,#icon-benefits-4:hover{
+    transform: scale(1.2);
+}

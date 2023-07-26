@@ -1,0 +1,41 @@
+.news-letter::-webkit-input-placeholder{
+    font-size: 12px;
+}
+.social-media i{
+    font-size: 25px !important;
+    padding: 5px;
+    background-color: #eef0f2;
+    margin: 5px;
+    border-radius: 10px;
+}
+.fa-phone-flip{
+    color: black;
+}
+.fa-telegram{
+    color: #2face4;
+}
+.fa-instagram{
+    color: #c72686;
+}
+.fa-whatsapp{
+    color: #24c942;
+}
+.fa-twitter{
+    color: #2face4;
+}
+footer .card{
+    margin-top: -115px;
+}
+.footer-menu i{
+    font-size: 8px;
+    padding-top: 4px;
+}
+.footer-menu a{
+    font-size: 12px;
+}
+.footer-menu a:hover{
+    transform: translateX(-10px);
+}
+.footer-menu a{
+    transition: all 0.5s ease-out;
+}

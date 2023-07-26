@@ -1,0 +1,90 @@
+/*card model 1*/
+.products-img-in-card .second-img{
+    display: none;
+}
+.card-slider-model-1 .products-img-in-card .first-img, .card-slider-model-1 .products-img-in-card .second-img{
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+.card-slider-model-1 .products-img-in-card:hover .first-img,.card-slider-model-1 .products-img-in-card:hover .second-img{
+    transform: translateY(-182px);
+}
+
+
+.card-slider-model-1 .customize-card-size{
+    /*width: 215px !important;*/
+    /*height: 390px !important;*/
+    /*width: 214px !important;*/
+}
+.card-slider-model-1 .fa-arrow-left{
+    background-color: #efefef;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 50px;
+    box-shadow: 0 0 1px 1px #b1b1b1;
+}
+/*card model 1*/
+
+/*card model 2*/
+.card-slider-model-2 .card-hover .first-img,.card-slider-model-2 .card-hover .second-img{
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+.card-slider-model-2 .card-hover:hover .first-img, .card-slider-model-2 .card-hover:hover .second-img{
+    transform: translateY(-182px);
+}
+.card-slider-model-2 .customize-card-size{
+    /*width: 215px !important;*/
+    height: 310px !important;
+    width: 214px !important;
+    cursor: pointer;
+}
+.card-hover{
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.card-hover:hover{
+    box-shadow: 0 0 11px 3px #ededed;
+}
+/*for can set hovering - owl-stage is classes add in runtime*/
+.card-slider-model-2 .owl-stage{
+    padding: 20px 0;
+}
+/*card model 2*/
+
+/*for all cards model*/
+.products-img-in-card{
+    height: 213px;
+    overflow: hidden;
+}
+.owl-carousel .owl-nav .owl-next span, .owl-carousel .owl-nav .owl-prev span{
+    position: absolute;
+    top: 200px;
+    background-color: white;
+    font-size: 29px;
+    width: 43px;
+    border-radius: 100%;
+    color: #272727;
+    box-shadow: 0 0 1px 1px #b1b1b1
+}
+.owl-carousel .owl-nav .owl-prev span{
+    right: -20px;
+}
+.owl-carousel .owl-nav .owl-next span{
+    left: -20px;
+}
+@media (max-width: 1200px) {
+    .card-slider div h5, .card-slider div h6, .card-slider div i, .card-slider div p, .card-slider div p s{
+        font-size: 15px !important;
+    }
+    .card-slider div p, .card-slider a,.card-slider a i{
+        font-size: 12px !important;
+    }
+}
+/*for all cards model*/
+

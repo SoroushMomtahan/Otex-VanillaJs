@@ -1,0 +1,34 @@
+@import "css/_utilites.css";
+@import url("css/_images_near_slider.css");
+@import "css/_card-models-style.css";
+@import "css/_benefits.css";
+@import "css/_products_category.css";
+@import "css/_nav_bar.css";
+@import "css/_ads.css";
+@import "css/_footer.css";
+@import "css/_login_page_style.css";
+@import "css/zoomy.css";
+@import "css/_products.css";
+
+body{
+    font-family: Anjoman, serif !important;
+    /*font-family: IRANSans, serif !important;*/
+    /*font-family: Yekan Bakh FaNum, serif !important;*/
+    background-color: #FFFDE7;
+}
+/*test Parallax*/
+.social-media div:nth-child(1){
+    transition: all 0.5s ease;
+}
+.social-media div:nth-child(2){
+    transition: all 1s ease;
+}
+.social-media div:nth-child(3){
+    transition: all 1.5s ease;
+}
+.social-media div:nth-child(4){
+    transition: all 2s ease;
+}
+.otex-logo{
+    transition: all 1s ease;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.2 -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!--    google font-->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <!-- owlcarousel -->
+  <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css">
+  <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.css">
+  <!--    css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid bg-login-page d-flex justify-content-center align-items-center" style="width: 100vw; height: 100vh">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 bg-login-page-secondary rounded-4">
+          <div class="row" style="width: 90vw; height: 90vh">
+            <div class="col-sm-4 pe-5 mt-5">
+<!--              logo-->
+              <div class="d-flex align-items-center justify-content-start">
+                <figure class="logo-container align-content-center ms-3 position-relative">
+                  <img class="img-fluid img-fluid-custom position-absolute" src="assets/image/img-061.svg"
+                       alt="">
+                </figure>
+                <div class="custom-border-left-primary"></div>
+                <h1 class="fs-5 fw-bold my-5 custom-border-right-primary-color pe-3 d-block" style="font-size: 13px !important;">
+                  لنت اوتکس</h1>
+              </div>
+<!--              welcome message-->
+              <p class="fw-bolder fs-4 mt-3">خوش آمدید ؛</p>
+<!--              nav tab-->
+              <nav>
+                <div class="nav nav-tabs nav-tab-buttons" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">ورود</button>
+                  <button class="nav-link" id="nav-signup-tab" data-bs-toggle="tab" data-bs-target="#nav-signup" type="button" role="tab" aria-controls="nav-signup" aria-selected="false">ثبت نام</button>
+                  <button class="nav-link" id="nav-forget-tab" data-bs-toggle="tab" data-bs-target="#nav-forget" type="button" role="tab" aria-controls="nav-forget" aria-selected="false">فراموشی رمز عبور</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
+                  <div class="mt-4 px-4">
+                    <label for="exampleFormControlInput1" class="position-relative w-100">
+                      <input type="email" class="form-control username rounded-top pe-5" id="exampleFormControlInput1" placeholder="نام کاربری">
+                      <i class="fa-solid fa-user position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <label for="exampleFormControlInput2" class="position-relative w-100">
+                      <input type="email" class="form-control password rounded-bottom pe-5" id="exampleFormControlInput2" placeholder="رمز عبور">
+                      <i class="fa-solid fa-lock position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <div class="form-check form-check-reverse mt-3">
+                      <input class="form-check-input custom-form-check-input" type="checkbox" value="" id="reverseCheck1">
+                      <label class="form-check-label" for="reverseCheck1">
+                        مرا به خاطر بسپار
+                      </label>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto mt-4">
+                      <button class="btn custom-btn-primary" type="button">ورود</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                      <a href="#" class="nav-link" style="font-size: 12px">راهنمای ورود</a>
+<!--                      <a href="#" class="nav-link" style="font-size: 12px">فیلم آموزش ورود</a>-->
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab" tabindex="0">
+                  <div class="mt-4 px-4">
+                    <label for="exampleFormControlInput3" class="position-relative w-100">
+                      <input type="tel" class="form-control phone-number rounded-top pe-5" id="exampleFormControlInput3" placeholder="شماره موبایل">
+                      <i class="fa-solid fa-mobile position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <label for="exampleFormControlInput4" class="position-relative w-100">
+                      <input type="email" class="form-control email pe-5" id="exampleFormControlInput4" placeholder="آدرس ایمیل">
+                      <i class="fa-solid fa-envelope position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <label for="exampleFormControlInput5" class="position-relative w-100">
+                      <input type="password" class="form-control password rounded-bottom pe-5" id="exampleFormControlInput5" placeholder="رمز عبور">
+                      <i class="fa-solid fa-lock position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <div class="d-grid gap-2 col-12 mx-auto mt-4">
+                      <button class="btn custom-btn-primary" type="button">ثبت نام</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-forget" role="tabpanel" aria-labelledby="nav-forget-tab" tabindex="0">
+                  <div class="mt-4 px-4">
+                    <label for="exampleFormControlInput6" class="position-relative w-100">
+                      <input type="email" class="form-control email rounded-3 pe-5" id="exampleFormControlInput6" placeholder="آدرس ایمیل">
+                      <i class="fa-solid fa-envelope position-absolute" style="top: 16px;right: 20px;color: #0000009e;"></i>
+                    </label>
+                    <div class="d-grid gap-2 col-12 mx-auto mt-4">
+                      <button class="btn custom-btn-primary" type="button">ارسال تاییدیه</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--            img-->
+            <div class="col-sm-8 bg-white" style="border-top-left-radius: 15px;border-bottom-left-radius: 15px;">
+              <img class="img-fluid" src="assets/image/login/03-login.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+</script>
+<!--owlcarousel-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owlcarousel/owl.carousel.js"></script>
+<!--main js-->
+<script src="main.js"></script>
+</body>
+</html>

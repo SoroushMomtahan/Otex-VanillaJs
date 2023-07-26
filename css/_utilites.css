@@ -1,0 +1,177 @@
+/*انجمن*/
+@font-face {
+    font-family: Anjoman;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/font/Anjoman/eot/Anjoman-FaNum-Regular.eot');
+    src: url('../assets/font/Anjoman/eot/Anjoman-FaNum-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../assets/font/Anjoman/woff2/Anjoman-FaNum-Regular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../assets/font/Anjoman/woff/Anjoman-FaNum-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+/*یکان پخ*/
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/font/YekanBakh/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+    url('../assets/font/YekanBakh/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: Anjoman;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../assets/font/Anjoman/eot/Anjoman-FaNum-Bold.eot');
+    src: url('../assets/font/Anjoman/eot/Anjoman-FaNum-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../assets/font/Anjoman/woff2/Anjoman-FaNum-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../assets/font/Anjoman/woff/Anjoman-FaNum-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+/*ایران سنس*/
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/font/IranSans/eot/IRANSansWeb.eot');
+    src: url('../assets/font/IranSans/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../assets/font/IranSans/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../assets/font/IranSans/woff/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../assets/font/IranSans/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+/*color*/
+.custom-bg-light{
+    background-color: #f7f7f7;
+    /*background-color: #eef0f2;*/
+}
+.custom-bg-primary{
+    background-color: #ffc715;
+}
+.custom-text-primary{
+    color: #ffc715;
+}
+.custom-text-light{
+    color: #eef0f2;
+}
+.custom-btn-light {
+    background-color: #eef0f2 !important;
+}
+
+.text-orange {
+    color: #ff1515 !important;
+}
+
+.custom-bg-danger {
+    background: #CB356B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.custom-bg-blur{
+    background-color: rgba(0,0,0,0);
+}
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.custom-border-dark{
+    border:1px solid #e2e2e5 !important;
+}
+.fa-star{
+    color: #ffc715;
+}
+
+/*border color*/
+.custom-border-left-secondary-color {
+    border-left: 2px solid #EEF0F2;
+}
+.custom-border-right-primary-color {
+    border-right: 2px solid #ffc715;
+}
+.custom-border-bottom-3{
+    border-bottom: 3px solid #ffc715;
+}
+.custom-border-bottom-2{
+    border-bottom: 2px solid #ffc715;
+}
+/*border color*/
+
+/*a unset color*/
+.a-hover-unset-color:hover {
+    color: unset;
+}
+/*a unset color*/
+
+/*btn color*/
+
+/*btn color*/
+
+/*color*/
+
+/*font*/
+.custom-fs-6 {
+    font-size: 0.8rem !important;
+}
+
+/*font*/
+
+/*Location*/
+.z-index-6 {
+    z-index: 6;
+}
+.z-index-7{
+    z-index: 7 !important;
+}
+.z-index-8{
+    z-index: 8;
+}
+.z-index-9{
+    z-index: 9;
+}
+.z-index-10{
+    z-index: 10;
+}
+.custom-text-light{
+    color: rgb(129, 133, 139);
+}
+.position-unset {
+    position: unset !important;
+}
+.fs-5px{
+    font-size: 5px;
+}
+.fs-10px{
+    font-size: 10px;
+}
+.fs-12px{
+    font-size: 12px;
+}
+.fs-13px{
+    font-size: 13px;
+}
+.fs-14px{
+    font-size: 14px;
+}
+.fs-15px{
+    font-size: calc(15rem / 16);
+}
+.fs-16px{
+    font-size: 16px;
+}
+.fs-19px{
+    font-size: 19px;
+}
+.fs-40px{
+    font-size: 40px !important;
+}
+.fs-75px{
+    font-size: 75px !important;
+}
+.text-gold{
+    color: #ffc110;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
+
+
+
